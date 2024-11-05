@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://k8n.cn/student/course/79708/leaves/5406592/pass-card -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+    <link href="./班级魔方用户中心_files/weui.min.css" rel="stylesheet">
+    <link href="./班级魔方用户中心_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./班级魔方用户中心_files/style.css" rel="stylesheet">
+    <link href="./班级魔方用户中心_files/line-awesome-nob.min.css" rel="stylesheet">
+    <script src="./班级魔方用户中心_files/hm.js.下载"></script>
+    <script>var gconfig = { role: 'student', type: 'fdy', cname: '院系', uname: '宾梓翔', uid: 1268367 }; var COURSE_ID = 79708; var sitecdn = '//c.d8n.cn'; var sitecdn_bak = '';</script>
+    <script src="./班级魔方用户中心_files/jquery-1.12.4.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/weui.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/app.js.下载"></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="./班级魔方用户中心_files/helper.css">
+    <link rel="stylesheet" href="./班级魔方用户中心_files/main_vue.css">
+
+    <title>班级魔方用户中心</title>
+</head>
+
+<body class="color-theme-blue push-content-right theme-light ">
+    <div class="wrapper">
+        <div class="sidebar sidebar-left" id="leftmenuarea">
+            <div class="profile-link"><a href="http://k8n.cn/student/course/79708/leaves/5406592/pass-card#"
+                    class="media">
+                    <div class="w-auto h-100">
+                        <figure class="avatar avatar-40"><i class="la la-user" style="font-size:40px"></i></figure>
+                    </div>
+                    <div class="media-body">
+                        <h5 class=" mb-0">宾梓翔 <span class="status-online bg-success"></span></h5>
+                        <p>student</p>
+                    </div>
+                </a></div>
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="http://k8n.cn/student/courses"> 首页</a></li>
+                    <li class="nav-item"><a href="http://k8n.cn/student/account?from=menu"> 账户设置/解绑</a></li>
+                    <li class="nav-item"><a href="http://k8n.cn/clearcache.php?ref=/student"> 清空登录缓存</a></li>
+                    <li class="nav-item"><a href="http://k8n.cn/student/password"> 修改密码</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page vue-loading" style="position: absolute;overflow-y: auto">
+            <div id="content">
+                <header class="row m-0 fixed-header">
+                    <div class="left">
+                        <a href="javascript:" onclick="history.back()"><img src="班级魔方用户中心_files/返回.svg" alt="SVG Image"
+                                width="22" height="22"></a>
+                    </div>
+                    <div class="col center">
+                        <a href="javascript:void(0);" class="logo">
+                            出示假条
+                        </a>
+                    </div>
+
+
+
+                </header>
+                <div class="page-content">
+                    <div style="padding:0 15px;">
+
+                        <div class="card mt-15">
+                            <div class="card-body ">
+                                <div class="card-text relative text-dark">
+                                    <p class="h2 text-center text-dark font-weight-light">
+                                        请假条
+                                    </p>
+                                    <div style="text-align: center;color: red;font-size: 16px;font-weight: bold">
+                                        未经院校认证的班级</div>
+
+                                    <div id="qrcode_box2_area" class="text-center my-3 ">
+                                        <div id="qrcode_box2">
+                                            <script type="text/javascript"
+                                                src="./班级魔方用户中心_files/jquery.qrcode.min.js.下载"></script>
+                                            <div id="qrcode_img2">
+                                                <!-- <canvas width="158" height="158"></canvas> -->
+                                            </div>
+                                            <div style="color: red;font-size: 12px;">只能使用假条专用核验工具扫码</div>
+                                            <script>
+                                                $(function () {
+                                                    $('#qrcode_img2').qrcode({
+                                                        text: 'S0L:5406592-362704cff4542dee21',
+                                                        width: 158,
+                                                        height: 158
+                                                    });
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item" id="name-li">姓名：某某某</li>
+                                        <li class="list-group-item" id="sex-li">性别：男</li>
+                                        <li class="list-group-item" id="college-li">院系：21级电气与信息工程学院</li>
+                                        <li class="list-group-item" id="stuid-li">学号：214013XXXXX</li>
+                                        <li class="list-group-item" id="start-li">开始：2023-11-14 12:00</li>
+                                        <li class="list-group-item" id="end-li">结束：2023-11-14 18:00</li>
+                                    </ul>
+
+                                    <div id="shade" class="c1"></div>
+                                    <div id="modal" class="c2">
+                                        <p>
+                                        <p id="name-p">姓名：&ensp;&ensp;&ensp;&ensp;<input type="text" value="XXX" /></p>
+                                        <p id="sex-p">性别：&ensp;&ensp;&ensp;&ensp;<input type="text" value="男" /></p>
+                                        <p id="college-p">院系：&ensp;&ensp;&ensp;&ensp;<input type="text"
+                                                value="21级电气与信息工程学院" /></p>
+                                        <p id="stuid-p">学号：&ensp;&ensp;&ensp;&ensp;<input type="text"
+                                                value="XXXXXXXXXXX" /></p>
+                                        <p id="start-p">开始：&ensp;&ensp;&ensp;&ensp;<input type="text" /></p>
+                                        <p id="end-p">结束：&ensp;&ensp;&ensp;&ensp;<input type="text" /></p>
+                                        <p id="shenpi-p">审批人：&ensp;&ensp;<input type="text" value="陈西凤" /></p>
+                                        <p id="pizun-p">批准时间：<input type="text" /></p>
+                                        <P>
+                                            <input type="button" value="确定" onclick="clickPromot()">
+                                            <input type="button" value="取消" onclick="Hidepromot();">
+                                    </div>
+
+                                    <style>
+                                        .hidepromot {
+                                            display: none;
+                                        }
+
+                                        .c1 {
+                                            position: fixed;
+                                            top: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            background: rgba(0, 0, 0, .5);
+                                            z-index: 2;
+                                        }
+
+                                        .c2 {
+                                            background-color: white;
+                                            position: fixed;
+                                            width: 400px;
+                                            height: 350;
+                                            top: 50%;
+                                            left: 50%;
+                                            z-index: 3;
+                                            margin-top: -150px;
+                                            margin-left: -200px;
+                                        }
+
+                                        #modal p {
+                                            margin-left: 80px;
+                                        }
+                                    </style>
+
+                                    <script>
+                                        // 时间戳格式化
+                                        function formatDate(x, y) {
+                                            var date = new Date() // 时间戳为10位需*1000，时间戳为13位的话不需乘1000
+                                            var year = date.getFullYear()
+                                            var month = ('0' + (date.getMonth() + 1)).slice(-2)
+                                            var sdate = ('0' + date.getDate()).slice(-2)
+                                            var hour = ('0' + (date.getHours() + x)).slice(-2)
+                                            var minute = ('0' + date.getMinutes()).slice(-2)
+                                            var second = ('0' + date.getSeconds()).slice(-2)
+                                            // 拼接
+                                            var result = year + '-' + month + '-' + sdate + ' ' + hour + ':' + (y == true ? minute : '00')
+                                            // 返回
+                                            return result
+                                        }
+
+                                        document.getElementById("start-p").getElementsByTagName("input")[0].value = formatDate(-2, false);
+                                        document.getElementById("end-p").getElementsByTagName("input")[0].value = formatDate(+4, false);
+                                        document.getElementById("pizun-p").getElementsByTagName("input")[0].value = formatDate(-4, true);
+
+                                        // 确定
+                                        function clickPromot() {
+                                            document.getElementById('shade').classList.add('hide');
+                                            document.getElementById('modal').classList.add('hide');
+
+                                            document.getElementById("name-li").innerHTML = "姓名：" + document.getElementById("name-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("sex-li").innerHTML = "性别：" + document.getElementById("sex-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("college-li").innerHTML = "院系：" + document.getElementById("college-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("stuid-li").innerHTML = "学号：" + document.getElementById("stuid-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("start-li").innerHTML = "开始：" + document.getElementById("start-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("end-li").innerHTML = "结束：" + document.getElementById("end-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("pizun-td").innerHTML = document.getElementById("pizun-p").getElementsByTagName("input")[0].value;
+                                            document.getElementById("shenpi-td").innerHTML = document.getElementById("shenpi-p").getElementsByTagName("input")[0].value;
+                                        }
+
+                                        // 取消
+                                        function Hidepromot() {
+                                            document.getElementById('shade').classList.add('hide');
+                                            document.getElementById('modal').classList.add('hide');
+                                        }   
+                                    </script>
+
+                                    <div class="text-center text-success mt-20 mb--10 font-24">
+                                        不离校
+                                    </div>
+
+                                    <div class="text-center">
+                                        <table class="table bottom-table table-sm table-borderless mt-30">
+                                            <tbody>
+                                                <tr>
+                                                    <th>审批人：</th>
+                                                    <td class="text-dark" id="shenpi-td">陈西凤</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>批准时间：</th>
+                                                    <td class="text-dark" id="pizun-td">2023-11-13 19:58</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="watermark"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="text-center mt-20 mb-30">
+                            <a href="javascript:" class="link p-10" onclick="backToSchool()">
+                                点击返校
+                                <i class="la la-angle-right"></i>
+                            </a>
+                        </div>
+
+
+                        <div class="text-center mt-20 mb-30">
+                            <a class="p-10" href="http://k8n.cn/student/course/79708/leaves/5406592/pass-card#"
+                                style="color: red">
+                                联系老师免费开通院系后台认证班级，可自定义假条内容与格式
+                            </a>
+                        </div>
+
+
+                        <style>
+                            .time-table th,
+                            .bottom-table th {
+                                font-weight: normal;
+                                color: #666;
+                                text-align: right;
+                                vertical-align: middle;
+                            }
+
+                            .time-table td {
+                                width: 220px;
+                            }
+
+                            .time-table p {
+                                margin-bottom: 0 !important;
+                            }
+
+                            .time-table {
+                                border-bottom: 1px solid #dee2e6;
+                            }
+
+                            .bottom-table {
+                                width: auto;
+                                font-size: 16px;
+                                text-align: left;
+                                margin: 0 auto;
+                            }
+
+                            #approved_icon {
+                                position: absolute;
+                                right: -15px;
+                                top: -15px;
+                                width: 110px;
+                                z-index: 100;
+                                display: none;
+                            }
+
+                            .bg-light-danger {
+                                background-color: rgba(255, 0, 0, 0.15);
+                            }
+
+                            .bg-light-success {
+                                background-color: #c5ffc5;
+                            }
+
+                            @keyframes stamp {
+                                from {
+                                    right: -90px;
+                                    width: 200px;
+                                    opacity: 0.5;
+                                }
+
+                                to {
+                                    right: -15px;
+                                    width: 110px;
+                                    opacity: 1;
+                                }
+                            }
+                        </style>
+
+                        <script type="text/javascript" src="./班级魔方用户中心_files/jquery.qrcode.min.js.下载"></script>
+                        <script>
+                            $('#approved_icon').css({
+                                animation: '0.3s ease-in stamp'
+                            }).show();
+
+                            function backToSchool() {
+                                weui.confirm('是否出示返校卡？出示后无法撤销返校状态！', function () {
+                                    location.href = '/student/course/79708/leaves/5406592/pass-card-return';
+                                });
+                            }
+
+                            function toggleQrCode2() {
+                                var box = $('#qrcode_box2');
+                                box.toggleClass('hide');
+                                box[0].scrollIntoView();
+                            }
+
+
+                            $(function () {
+                                var search = new URLSearchParams(location.search);
+                                if (search.get('qrcode')) {
+                                    $('#qrcode_box2_area').show();
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./班级魔方用户中心_files/bootstrap.bundle.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/main.js.下载"></script>
+    <script src="./班级魔方用户中心_files/lodash.min.js.下载"></script>
+
+    <script src="./班级魔方用户中心_files/vue.min.js.下载"></script>
+
+    <script src="./班级魔方用户中心_files/uuid.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/linq.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/localforage.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/vuelidate.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/validators.min.js.下载"></script>
+    <script src="./班级魔方用户中心_files/main_vue_4m2019.js.下载"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?362de400d3fe4117e8e3513a52c0da9d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</body>
+
+</html>
